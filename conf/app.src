@@ -1,0 +1,7 @@
+SOURCE_URL=https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.0/tiki-24.0.tar.gz/download
+SOURCE_SUM=2f9fd0e3509cf28c884173bfa58ff3aaa2e694f8c6051b0a94ba1bdbb243463e
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_FILENAME=
+SOURCE_EXTRACT=true

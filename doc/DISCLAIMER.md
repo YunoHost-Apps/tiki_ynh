@@ -1,0 +1,1 @@
+`http://example.org/tiki-install.php`
