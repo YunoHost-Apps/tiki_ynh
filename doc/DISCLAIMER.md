@@ -1,1 +1,1 @@
-`http://example.org/tiki-install.php`
+Database credentials are sent by mail for the post installation. `http://example.org/tiki-install.php`

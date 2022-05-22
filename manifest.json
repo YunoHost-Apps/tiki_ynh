@@ -3,22 +3,22 @@
     "id": "tiki",
     "packaging_format": 1,
     "description": {
-        "en": "Explain i what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)",
+        "en": "Wiki engine",
         "fr": "Moteur de wiki"
     },
-    "version": "1.0~ynh1",
+    "version": "24.0~ynh1",
     "url": "https://tiki.org/",
     "upstream": {
-        "license": "free",
+        "license": "GPL-2.0-only",
         "website": "https://tiki.org/",
         "demo": "https://tiki.org/Try-Tiki",
         "admindoc": "https://doc.tiki.org",
         "code": "https://gitlab.com/tikiwiki/tiki/"
     },
-    "license": "free",
+    "license": "GPL-2.0-only",
     "maintainer": {
-        "name": "John doe",
-        "email": "john.doe@example.com"
+        "name": "",
+        "email": ""
     },
     "requirements": {
         "yunohost": ">= 4.3.0"
