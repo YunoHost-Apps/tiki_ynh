@@ -105,6 +105,20 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 ynh_add_fpm_config
 
 #=================================================
+# CREATE DATA DIRECTORY
+#=================================================
+ynh_script_progression --message="Creating a data directory..." --time --weight=1
+
+datadir=/home/yunohost.app/$app
+ynh_app_setting_set --app=$app --key=datadir --value=$datadir
+
+mkdir -p $datadir
+
+chmod 750 "$datadir"
+chmod -R o-rwx "$datadir"
+chown -R $app:www-data "$datadir"
+
+#=================================================
 # ADD A CONFIGURATION
 #=================================================
 # ynh_script_progression --message="Adding a configuration file..." --time --weight=1
@@ -148,8 +162,8 @@ Please open your $app domain: https://$domain$path_url
 Complete the registration process from the setup page displayed.
 Details for MySQL database to be enterted while registration process:
 
-Database login:    $app
 Database name:     $app
+Database userame:  $app
 Database password: $db_pwd
 
 If you are facing any problem or want to improve this app, please open a new issue here: https://github.com/YunoHost-Apps/tiki_ynh/issues"
