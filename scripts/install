@@ -105,6 +105,13 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 ynh_add_fpm_config
 
 #=================================================
+# INSTALL LYCHEE WITH COMPOSER
+#=================================================
+ynh_script_progression --message="Installing Composer..." --weight=10
+
+ynh_install_composer
+
+#=================================================
 # CREATE DATA DIRECTORY
 #=================================================
 ynh_script_progression --message="Creating a data directory..." --weight=1
