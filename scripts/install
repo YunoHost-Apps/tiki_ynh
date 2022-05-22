@@ -105,13 +105,6 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 ynh_add_fpm_config
 
 #=================================================
-# INSTALL LYCHEE WITH COMPOSER
-#=================================================
-ynh_script_progression --message="Installing Composer..." --weight=10
-
-curl -sS https://getcomposer.org/installer | COMPOSER_HOME="$final_path/.composer" php${phpversion} -- --quiet --install-dir="$final_path" --version="2.3.3" || ynh_die --message="Unable to install Composer."
-
-#=================================================
 # CREATE DATA DIRECTORY
 #=================================================
 ynh_script_progression --message="Creating a data directory..." --weight=1
