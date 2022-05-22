@@ -23,7 +23,7 @@ TikiWiki, is a free and open source wiki-based online content management system 
 
 ## Screenshots
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/Screenshot.png)
 
 ## Disclaimers / important information
 

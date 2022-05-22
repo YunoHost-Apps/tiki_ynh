@@ -19,7 +19,7 @@ TikiWiki, est un système de gestion de contenu et une suite bureautique en lign
 
 ## Captures d'écran
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/Screenshot.png)
 
 ## Avertissements / informations importantes
 
