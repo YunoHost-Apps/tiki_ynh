@@ -15,9 +15,9 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Explain i what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)
+TikiWiki, is a free and open source wiki-based online content management system and office suite. In addition to enabling websites and portals on the Internet and on intranets and extranets, Tiki contains several collaboration features allowing it to function as a Geospatial Content Management System (GeoCMS) and Web Groupware application.
 
-**Shipped version:** 1.0~ynh1
+**Shipped version:** 24.0~ynh1
 
 **Demo:** https://tiki.org/Try-Tiki
 
@@ -27,7 +27,7 @@ Explain i what it actually does (it is meant to give a rough idea to users brows
 
 ## Disclaimers / important information
 
-`http://example.org/tiki-install.php`
+Database credentials are sent by mail for the post installation. `http://example.org/tiki-install.php`
 ## Documentation and resources
 
 * Official app website: https://tiki.org/

@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 TikiWiki, est un système de gestion de contenu et une suite bureautique en ligne basée sur un wiki libre et open source. En plus de permettre les sites web et portails sur Internet et sur intranets et extranets, Tiki contient plusieurs fonctionnalités de collaboration lui permettant de fonctionner comme un système de gestion de contenu géospatial (GeoCMS) et application Web Groupware. s
 
-**Version incluse :** 1.0~ynh1
+**Version incluse :** 24.0~ynh1
 
 **Démo :** https://tiki.org/Try-Tiki
 
@@ -23,7 +23,7 @@ TikiWiki, est un système de gestion de contenu et une suite bureautique en lign
 
 ## Avertissements / informations importantes
 
-`http://example.org/tiki-install.php`
+Database credentials are sent by mail for the post installation. `http://example.org/tiki-install.php`
 ## Documentations et ressources
 
 * Site officiel de l'app : https://tiki.org/
