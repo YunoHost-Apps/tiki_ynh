@@ -15,16 +15,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### Features
-
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-
+Explain i what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)
 
 **Shipped version:** 1.0~ynh1
 
@@ -40,9 +31,8 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 ## Documentation and resources
 
 * Official app website: https://tiki.org/
-* Official user documentation: https://yunohost.org/apps
 * Official admin documentation: https://doc.tiki.org
-* Upstream app code repository: https://sourceforge.net/projects/tikiwiki/
+* Upstream app code repository: https://gitlab.com/tikiwiki/tiki/
 * YunoHost documentation for this app: https://yunohost.org/app_tiki
 * Report a bug: https://github.com/YunoHost-Apps/tiki_ynh/issues
 

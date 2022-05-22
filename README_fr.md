@@ -11,16 +11,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### Features
-
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-
+TikiWiki, est un système de gestion de contenu et une suite bureautique en ligne basée sur un wiki libre et open source. En plus de permettre les sites web et portails sur Internet et sur intranets et extranets, Tiki contient plusieurs fonctionnalités de collaboration lui permettant de fonctionner comme un système de gestion de contenu géospatial (GeoCMS) et application Web Groupware. s
 
 **Version incluse :** 1.0~ynh1
 
@@ -36,9 +27,8 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 ## Documentations et ressources
 
 * Site officiel de l'app : https://tiki.org/
-* Documentation officielle utilisateur : https://yunohost.org/apps
 * Documentation officielle de l'admin : https://doc.tiki.org
-* Dépôt de code officiel de l'app : https://sourceforge.net/projects/tikiwiki/
+* Dépôt de code officiel de l'app : https://gitlab.com/tikiwiki/tiki/
 * Documentation YunoHost pour cette app : https://yunohost.org/app_tiki
 * Signaler un bug : https://github.com/YunoHost-Apps/tiki_ynh/issues
 
