@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Tiki for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![Working status](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)  
 [![Install Tiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiki)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -23,7 +23,7 @@ TikiWiki, is a free and open source wiki-based online content management system 
 
 ## Screenshots
 
-![](./doc/screenshots/Screenshot.png)
+![Screenshot of Tiki](./doc/screenshots/Screenshot.png)
 
 ## Disclaimers / important information
 
@@ -38,21 +38,22 @@ To ease the install process and first access, Tiki saves your uploaded files (of
 In that case, consider switching from "Store to database" to "Store to directory", which you will find in the Configuration Wizard. Please use this preset path directory: `/home/yunohost.app/tiki`. You will be able to migrate your currently uploaded files from one to the other.
 ## Documentation and resources
 
-* Official app website: https://tiki.org/
-* Official admin documentation: https://doc.tiki.org
-* Upstream app code repository: https://gitlab.com/tikiwiki/tiki/
-* YunoHost documentation for this app: https://yunohost.org/app_tiki
-* Report a bug: https://github.com/YunoHost-Apps/tiki_ynh/issues
+* Official app website: <https://tiki.org/>
+* Official admin documentation: <https://doc.tiki.org>
+* Upstream app code repository: <https://gitlab.com/tikiwiki/tiki/>
+* YunoHost documentation for this app: <https://yunohost.org/app_tiki>
+* Report a bug: <https://github.com/YunoHost-Apps/tiki_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/tiki_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/tiki_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade tiki -u https://github.com/YunoHost-Apps/tiki_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
