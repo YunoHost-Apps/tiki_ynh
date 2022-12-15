@@ -15,7 +15,8 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-TikiWiki, est un système de gestion de contenu et une suite bureautique en ligne basée sur un wiki libre et open source. En plus de permettre les sites web et portails sur Internet et sur intranets et extranets, Tiki contient plusieurs fonctionnalités de collaboration lui permettant de fonctionner comme un système de gestion de contenu géospatial (GeoCMS) et application Web Groupware. s
+Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre de fonctionnalités intégrées. Cas d'utilisation: Publication Web / Collaboration / Gestion de projet / Suite bureautique / Gestion des connaissances / Panier d'achat / Réseau social / Gestion de communauté et clientèle (CRM) / Membrariat / Système de gestion de l'apprentissage (LMS). Les Tiki Trackers sont la composante intégrée pour le développement low-code / no-code et le générateur de formulaires et bases de données.
+
 
 **Version incluse :** 24.0~ynh2
 
