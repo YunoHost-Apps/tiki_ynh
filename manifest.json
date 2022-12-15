@@ -3,25 +3,25 @@
     "id": "tiki",
     "packaging_format": 1,
     "description": {
-        "en": "Wiki engine",
-        "fr": "Moteur de wiki"
+        "en": "Wiki-based, content management system",
+        "fr": "Système de gestion de contenu basé sur Wiki"
     },
-    "version": "24.0~ynh2",
+    "version": "24.2~ynh1",
     "url": "https://tiki.org/",
     "upstream": {
-        "license": "GPL-2.0-only",
+        "license": "LGPL-2.1-only",
         "website": "https://tiki.org/",
         "demo": "https://tiki.org/Try-Tiki",
         "admindoc": "https://doc.tiki.org",
         "code": "https://gitlab.com/tikiwiki/tiki/"
     },
-    "license": "GPL-2.0-only",
+    "license": "LGPL-2.1-only",
     "maintainer": {
         "name": "eric_G",
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
