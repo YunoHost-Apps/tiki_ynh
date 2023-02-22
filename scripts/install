@@ -125,7 +125,7 @@ chown -R $app:www-data "$datadir"
 # Define a function to execute commands with proper permissions
 exec_as_app() {
   (cd "$final_path" && ynh_exec_as "$app" \
-      php${phpversion} --define apc.enable_cli=1 --no-interaction --no-ansi "$@")
+      php${phpversion} --define apc.enable_cli=1 "$@")
 }
 
 ynh_script_progression --message="Create database configuration file..." --time --weight=1
