@@ -20,8 +20,8 @@ code = "https://gitlab.com/tikiwiki/tiki/"
 yunohost = ">= 11.1.12"
 architectures = "all"
 multi_instance = true
-ldap = "?"
-sso = "?"
+ldap = false
+sso = false
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -48,7 +48,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring"
+    packages = "mariadb-server php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring"
 
     [resources.database]
     type = "mysql"
