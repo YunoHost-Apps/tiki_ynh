@@ -1,7 +1,3 @@
-### Postinstall
-
-You can log in using the special `admin` username and the `admin` password. You will be asked to change the password immediately after login.
-
 ### Storing your uploaded files
 
 To ease the install process and first access, Tiki saves your uploaded files (office documents, images, pdf, etc. attached to wiki pages, forum posts, tracker items, file galleries, ...) by default in its database. This works perfectly in most cases but it is not the recommended setup if you need to save many thousands of files or more.
