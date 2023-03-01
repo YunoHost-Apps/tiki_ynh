@@ -5,15 +5,16 @@ It shall NOT be edited by hand.
 
 # Tiki pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
+
 [![Installer Tiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiki)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Tiki rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Tiki rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre de fonctionnalités intégrées. Cas d'utilisation: Publication Web / Collaboration / Gestion de projet / Suite bureautique / Gestion des connaissances / Panier d'achat / Réseau social / Gestion de communauté et clientèle (CRM) / Membrariat / Système de gestion de l'apprentissage (LMS). Les Tiki Trackers sont la composante intégrée pour le développement low-code / no-code et le générateur de formulaires et bases de données.
 
@@ -22,26 +23,30 @@ Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre 
 
 **Démo :** https://tiki.org/Try-Tiki
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Tiki](./doc/screenshots/Screenshot.png)
+![Capture d’écran de Tiki](./doc/screenshots/Screenshot.png)
 
 ## Avertissements / informations importantes
 
 ### Postinstall
 
-Database credentials are sent by mail for the post installation. `http://example.org/tiki-install.php`
+You can log in using the special `admin` username and the `admin` password. You will be asked to change the password immediately after login.
 
 ### Storing your uploaded files
 
 To ease the install process and first access, Tiki saves your uploaded files (office documents, images, pdf, etc. attached to wiki pages, forum posts, tracker items, file galleries, ...) by default in its database. This works perfectly in most cases but it is not the recommended setup if you need to save many thousands of files or more.
 
 In that case, consider switching from "Store to database" to "Store to directory", which you will find in the Configuration Wizard. Please use this preset path directory: `/home/yunohost.app/tiki`. You will be able to migrate your currently uploaded files from one to the other.
+
+
+If you are facing any problem or want to improve this app, please open a new issue here: https://github.com/YunoHost-Apps/tiki_ynh/issues"
+
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://tiki.org/>
-* Documentation officielle de l'admin : <https://doc.tiki.org>
-* Dépôt de code officiel de l'app : <https://gitlab.com/tikiwiki/tiki/>
+* Site officiel de l’app : <https://tiki.org/>
+* Documentation officielle de l’admin : <https://doc.tiki.org>
+* Dépôt de code officiel de l’app : <https://gitlab.com/tikiwiki/tiki/>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_tiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/tiki_ynh/issues>
 
@@ -57,4 +62,4 @@ ou
 sudo yunohost app upgrade tiki -u https://github.com/YunoHost-Apps/tiki_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>

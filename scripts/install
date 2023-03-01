@@ -119,18 +119,30 @@ chmod -R o-rwx "$datadir"
 chown -R $app:www-data "$datadir"
 
 #=================================================
-# ADD A CONFIGURATION
+# ADD INITIAL CONFIGURATION
 #=================================================
-# ynh_script_progression --message="Adding a configuration file..." --time --weight=1
+ynh_script_progression --message="Configuring $app..." --weight=3
 
-# ynh_add_config --template="../conf/local.php" --destination="$final_path/db/local.php"
+# Define a function to execute commands with proper permissions
+exec_as_app() {
+  (cd "$final_path" && ynh_exec_as "$app" \
+      php${phpversion} --define apc.enable_cli=1 "$@")
+}
 
-# chmod 400 "$final_path/db/local.php"
-# chown $app:$app "$final_path/db/local.php"
+# Create database configuration file
+exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
-# pushd $final_path
-# 	php$phpversion console.php database:install
-# popd
+# Create database contents
+exec_as_app console.php database:install
+
+# Lock installer
+exec_as_app console.php installer:lock
+
+# Create data index
+exec_as_app console.php index:rebuild
+
+# Set on Long Term Support versions
+exec_as_app console.php preferences:set tiki_release_cycle longterm
 
 #=================================================
 # SETUP SSOWAT
@@ -149,26 +161,6 @@ fi
 ynh_script_progression --message="Reloading NGINX web server..." --weight=1
 
 ynh_systemd_action --service_name=nginx --action=reload
-
-#=================================================
-# SEND A README FOR THE ADMIN
-#=================================================
-ynh_script_progression --message="Sending a readme for the admin..." --weight=1
-
-message="Tiki was successfully installed :)
-
-Please open your $app domain: https://$domain$path_url
-
-Complete the registration process from the setup page displayed.
-Details for MySQL database to be enterted while registration process:
-
-Database name:     $app
-Database userame:  $app
-Database password: $db_pwd
-
-If you are facing any problem or want to improve this app, please open a new issue here: https://github.com/YunoHost-Apps/tiki_ynh/issues"
-
-ynh_send_readme_to_admin "$message"
 
 #=================================================
 # END OF SCRIPT
