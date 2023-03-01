@@ -132,13 +132,13 @@ ynh_script_progression --message="Configuring $app..." --weight=1
 
 exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
-#Create database contents
+# Create database contents
 exec_as_app console.php database:install
 
-#Lock installer
+# Lock installer
 exec_as_app console.php installer:lock
 
-#Create data index
+# Create data index
 exec_as_app console.php index:rebuild
 
 # Set on Long Term Support versions
