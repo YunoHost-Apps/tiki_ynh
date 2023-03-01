@@ -128,19 +128,20 @@ exec_as_app() {
       php${phpversion} --define apc.enable_cli=1 "$@")
 }
 
-ynh_script_progression --message="Create database configuration file..." --time --weight=1
+ynh_script_progression --message="Configuring $app..." --weight=1
+
 exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
-ynh_script_progression --message="Create database contents..." --time --weight=1
+#Create database contents
 exec_as_app console.php database:install
 
-ynh_script_progression --message="Lock installer..." --time --weight=1
+#Lock installer
 exec_as_app console.php installer:lock
 
-ynh_script_progression --message="Create data index..." --time --weight=1
+#Create data index
 exec_as_app console.php index:rebuild
 
-ynh_script_progression --message="Set on Long Term Support versions..." --time --weight=1
+# Set on Long Term Support versions
 exec_as_app console.php preferences:set tiki_release_cycle longterm
 
 #=================================================
