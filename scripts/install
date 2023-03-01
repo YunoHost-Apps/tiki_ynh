@@ -51,6 +51,7 @@ ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
 #=================================================
 # ADD INITIAL CONFIGURATION
 #=================================================
+ynh_script_progression --message="Configuring $app..." --weight=3
 
 # Define a function to execute commands with proper permissions
 exec_as_app() {
@@ -58,7 +59,6 @@ exec_as_app() {
       php${phpversion} --define apc.enable_cli=1 "$@")
 }
 
-ynh_script_progression --message="Configuring $app..." --weight=1
 exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
 # Create database contents
