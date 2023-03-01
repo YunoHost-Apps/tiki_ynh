@@ -9,6 +9,18 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+fpm_footprint="low"
+fpm_free_footprint=0
+fpm_usage="low"
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+
+ynh_app_setting_set --app=$app --key=fpm_footprint --value=$fpm_footprint
+ynh_app_setting_set --app=$app --key=fpm_free_footprint --value=$fpm_free_footprint
+ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -34,7 +46,7 @@ ynh_add_nginx_config
 ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 
 # Create a dedicated PHP-FPM config
-ynh_add_fpm_config
+ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
 
 #=================================================
 # ADD INITIAL CONFIGURATION
@@ -46,19 +58,19 @@ exec_as_app() {
       php${phpversion} --define apc.enable_cli=1 "$@")
 }
 
-ynh_script_progression --message="Create database configuration file..." --weight=1
+ynh_script_progression --message="Configuring $app..." --weight=1
 exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
-ynh_script_progression --message="Create database contents..." --weight=1
+# Create database contents
 exec_as_app console.php database:install
 
-ynh_script_progression --message="Lock installer..." --weight=1
+# Lock installer
 exec_as_app console.php installer:lock
 
-ynh_script_progression --message="Create data index..." --weight=1
+# Create data index
 exec_as_app console.php index:rebuild
 
-ynh_script_progression --message="Set on Long Term Support versions..." --weight=1
+# Set on Long Term Support versions
 exec_as_app console.php preferences:set tiki_release_cycle longterm
 
 #=================================================
