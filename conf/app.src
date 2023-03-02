@@ -1,5 +1,5 @@
-SOURCE_URL=https://downloads.sourceforge.net/project/tikiwiki/Tiki_24.x_Wolf_359/24.2/tiki-24.2.tar.gz?ts=gAAAAABjmtSWie10chNjCS-hIqa0sdfbNAksIFBREpuSGJov09FuZPdqo51rqIMQcqJ-XY5nTaT6bJkBpRjA08tOmH2y3umJVw%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Ftikiwiki%2Ffiles%2FTiki_24.x_Wolf_359%2F24.2%2Ftiki-24.2.tar.gz%2Fdownload
-SOURCE_SUM=717f41adee5be1122872a1f4aab20304bf97a6f55bfa8cc651ec4551ed9812d3
+SOURCE_URL=https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download
+SOURCE_SUM=e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
