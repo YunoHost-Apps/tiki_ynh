@@ -48,7 +48,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring"
+    packages = "tesseract-ocr imagemagick mariadb-server php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring"
 
     [resources.database]
     type = "mysql"
