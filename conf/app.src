@@ -1,3 +1,5 @@
+if [ "$release_cycle" == "regular" ];
+then
 SOURCE_URL=https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download
 SOURCE_SUM=e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4
 SOURCE_SUM_PRG=sha256sum
@@ -5,3 +7,12 @@ SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
 SOURCE_FILENAME=
 SOURCE_EXTRACT=true
+else
+SOURCE_URL=https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download
+SOURCE_SUM=e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_FILENAME=
+SOURCE_EXTRACT=true
+fi
