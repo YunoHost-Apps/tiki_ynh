@@ -33,6 +33,16 @@ ram.runtime = "50M"
     type = "path"
     default = "/tiki"
 
+    [install.release_cycle]
+		ask.en = "Upgrade cycle"
+		ask.fr = "Cycle de mises à jours"
+		help.en = "Every 3 version is an LTS. LTS versions are supported for 4 years"
+		help.fr = "Toutes les 3 versions sont des LTS qui sont maintenues pendant 4 ans"
+    type = "string"
+		choices.longterm = "Install latest Long Term Support version"
+		choices.regular = "Install latest version"
+    default = "longterm"
+
     [install.init_main_permission]
     type = "group"
     default = "visitors"
