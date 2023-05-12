@@ -48,7 +48,7 @@ then
 
 	# Download, check integrity, uncompress and patch the source from app.src
     source_id_to_use="main"
-    if [[ "$release_cycle" != "longterm" ]]
+    if [[ "$release_cycle" == "longterm" ]]
     then
         source_id_to_use="lts"
     fi
