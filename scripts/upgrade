@@ -47,7 +47,13 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
+    source_id_to_use="main"
+    if [[ "$release_cycle" != "longterm" ]]
+    then
+        source_id_to_use="lts"
+    fi
+
+    ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use"
 fi
 
 chmod -R o-rwx "$install_dir"
