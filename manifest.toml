@@ -56,8 +56,8 @@ ram.runtime = "50M"
         sha256 = "e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4"
 
         [resources.sources.lts]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download"
-        sha256 = "e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.0/tiki-24.0.tar.gz/download"
+        sha256 = "2f9fd0e3509cf28c884173bfa58ff3aaa2e694f8c6051b0a94ba1bdbb243463e"
 
     [resources.system_user]
 
