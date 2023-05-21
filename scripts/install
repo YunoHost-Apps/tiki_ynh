@@ -27,7 +27,13 @@ ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
 ynh_script_progression --message="Setting up source files..." --weight=15
 
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$install_dir"
+source_id_to_use="main"
+if [[ "$release_cycle" == "longterm" ]]
+then
+    source_id_to_use="lts"
+fi
+
+ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
