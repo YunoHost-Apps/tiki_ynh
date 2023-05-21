@@ -1,0 +1,9 @@
+test_format = 1.0
+
+[default]
+
+[regular]
+
+    only = ["install.subdir"]
+
+    args.release_cycle = "regular"

@@ -1,0 +1,77 @@
+packaging_format = 2
+
+id = "tiki"
+name = "Tiki"
+description.en = "Wiki-based, content management system"
+description.fr = "Système de gestion de contenu basé sur Wiki"
+
+version = "25.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "LGPL-2.1-only"
+website = "https://tiki.org/"
+demo = "https://tiki.org/Try-Tiki"
+admindoc = "https://doc.tiki.org"
+code = "https://gitlab.com/tikiwiki/tiki/"
+
+[integration]
+yunohost = ">= 11.1.20"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "300M"
+ram.runtime = "50M"
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/tiki"
+
+    [install.release_cycle]
+    ask.en = "Upgrade cycle"
+    ask.fr = "Cycle de mises à jours"
+    help.en = "Every 3 version is an LTS. LTS versions are supported for 5 years"
+    help.fr = "Toutes les 3 versions sont des LTS qui sont maintenues pendant 5 ans"
+    type = "select"
+    choices.longterm = "Install latest Long Term Support version (recommended)"
+    choices.regular = "Install latest version"
+    default = "longterm"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download"
+        sha256 = "e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4"
+        format = "tar.gz"
+
+        [resources.sources.lts]
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.0/tiki-24.0.tar.gz/download"
+        sha256 = "2f9fd0e3509cf28c884173bfa58ff3aaa2e694f8c6051b0a94ba1bdbb243463e"
+        format = "tar.gz"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "tesseract-ocr imagemagick mariadb-server php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring"
+
+    [resources.database]
+    type = "mysql"
