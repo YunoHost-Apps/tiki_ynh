@@ -5,7 +5,7 @@ name = "Tiki"
 description.en = "Wiki-based, content management system"
 description.fr = "Système de gestion de contenu basé sur Wiki"
 
-version = "25.0~ynh1"
+version = "25.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -52,8 +52,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.0.tar.gz/download"
-        sha256 = "e056cdcfdcb03a8c4710db44e7f04e0f846eb7131a8f8aa130a3d8348e0161a4"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.1.tar.gz/download"
+        sha256 = "6c7af7d6f42d4b25e7640912cab3756d086bb17b81d78ba7ae6d6aca51d1dbe4"
         format = "tar.gz"
 
         [resources.sources.lts]
