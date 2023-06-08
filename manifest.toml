@@ -57,8 +57,8 @@ ram.runtime = "50M"
         format = "tar.gz"
 
         [resources.sources.lts]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.0/tiki-24.0.tar.gz/download"
-        sha256 = "2f9fd0e3509cf28c884173bfa58ff3aaa2e694f8c6051b0a94ba1bdbb243463e"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.0/tiki-24.3.tar.gz/download"
+        sha256 = "b1e0468ece35376c4d641227cb25c17347751d191627d03652a75f64ebe3d877"
         format = "tar.gz"
 
     [resources.system_user]
