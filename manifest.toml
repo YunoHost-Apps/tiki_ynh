@@ -52,7 +52,7 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.0/tiki-25.1.tar.gz/download"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_25.x_Sagittarius_A/25.1/tiki-25.1.tar.gz/download"
         sha256 = "6c7af7d6f42d4b25e7640912cab3756d086bb17b81d78ba7ae6d6aca51d1dbe4"
         format = "tar.gz"
 
