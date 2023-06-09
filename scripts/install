@@ -73,7 +73,7 @@ exec_as_app console.php database:install
 
 # Set default database directory
 cd "$install_dir"
-sed -i -e "s#storage\/fgal#$data_dir#" lib/prefs/fgal.php
+sed -i -e "s#storage/fgal#$data_dir#" lib/prefs/fgal.php
 # Lock installer
 exec_as_app console.php installer:lock
 
