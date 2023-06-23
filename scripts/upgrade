@@ -38,6 +38,12 @@ if [ -z "${fpm_usage:-}" ]; then
     ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
 fi
 
+# If release_cycle doesn't exist, create it
+if [ -z "${release_cycle:-}" ]; then
+    release_cycle=longterm
+    ynh_app_setting_set --app=$app --key=release_cycle --value=$release_cycle
+fi
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
