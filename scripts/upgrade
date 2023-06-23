@@ -65,6 +65,9 @@ fi
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
+# Update database
+exec_as_app console.php database:update
+
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
