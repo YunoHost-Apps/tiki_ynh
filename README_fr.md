@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre de fonctionnalités intégrées. Cas d'utilisation: Publication Web / Collaboration / Gestion de projet / Suite bureautique / Gestion des connaissances / Panier d'achat / Réseau social / Gestion de communauté et clientèle (CRM) / Membrariat / Système de gestion de l'apprentissage (LMS). Les Tiki Trackers sont la composante intégrée pour le développement low-code / no-code et le générateur de formulaires et bases de données.
 
 
-**Version incluse :** 25.1~ynh1
+**Version incluse :** 25.1~ynh2
 
 **Démo :** https://tiki.org/Try-Tiki
 

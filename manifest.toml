@@ -5,7 +5,7 @@ name = "Tiki"
 description.en = "Wiki-based, content management system"
 description.fr = "Système de gestion de contenu basé sur Wiki"
 
-version = "25.1~ynh1"
+version = "25.1~ynh2"
 
 maintainers = ["eric_G"]
 
