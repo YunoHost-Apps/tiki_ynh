@@ -17,7 +17,7 @@ admindoc = "https://doc.tiki.org"
 code = "https://gitlab.com/tikiwiki/tiki/"
 
 [integration]
-yunohost = ">= 11.1.21"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
