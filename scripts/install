@@ -61,24 +61,24 @@ exec_as_app() {
 }
 
 # Create database configuration file
-exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
+ynh_exec_warn_less exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
 # Create database contents
-exec_as_app console.php database:install
+ynh_exec_warn_less exec_as_app console.php database:install
 
 # Set default database directory
 cd "$install_dir"
 sed -i -e "s#storage/fgal#$data_dir#" lib/prefs/fgal.php
 # Lock installer
-exec_as_app console.php installer:lock
+ynh_exec_warn_less exec_as_app console.php installer:lock
 
 # Create data index
-exec_as_app console.php index:rebuild
+ynh_exec_warn_less exec_as_app console.php index:rebuild
 
 # Set on Long Term Support versions
 if [[ "$release_cycle" == "longterm" ]]
 then
-  exec_as_app console.php preferences:set tiki_release_cycle longterm
+  ynh_exec_warn_less exec_as_app console.php preferences:set tiki_release_cycle longterm
 fi
 
 #=================================================
