@@ -32,7 +32,7 @@ Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with t
 - Tiki Trackers is the built-in database web apps builder and low-code / no-code application framework.
 
 
-**Shipped version:** 26.0~ynh1
+**Shipped version:** 26.1~ynh1
 
 **Demo:** https://tiki.org/Try-Tiki
 
@@ -45,7 +45,6 @@ Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with t
 * Official app website: <https://tiki.org/>
 * Official admin documentation: <https://doc.tiki.org>
 * Upstream app code repository: <https://gitlab.com/tikiwiki/tiki/>
-* YunoHost documentation for this app: <https://yunohost.org/app_tiki>
 * Report a bug: <https://github.com/YunoHost-Apps/tiki_ynh/issues>
 
 ## Developer info
