@@ -71,13 +71,13 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "tesseract-ocr imagemagick mariadb-server"
+    packages = "tesseract-ocr, imagemagick, mariadb-server"
 
     packages_from_raw_bash = """
             if [[ "$release_cycle" == "regular" ]]; then 
-                echo "php8.1-bz2 php8.1-curl php8.1-gd php8.1-zip php8.1-mysql php8.1-xml php8.1-mbstring php8.1-intl"
+                echo "php8.1-bz2, php8.1-curl, php8.1-gd, php8.1-zip, php8.1-mysql, php8.1-xml, php8.1-mbstring, php8.1-intl"
             else
-                echo "php7.4-bz2 php7.4-curl php7.4-gd php7.4-zip php7.4-mysql php7.4-xml php7.4-mbstring php7.4-intl"
+                echo "php7.4-bz2, php7.4-curl, php7.4-gd, php7.4-zip, php7.4-mysql, php7.4-xml, php7.4-mbstring, php7.4-intl"
             fi
         """
 
