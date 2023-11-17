@@ -46,6 +46,7 @@ Les Tiki Trackers sont la composante intégrée pour le développement low-code 
 * Site officiel de l’app : <https://tiki.org/>
 * Documentation officielle de l’admin : <https://doc.tiki.org>
 * Dépôt de code officiel de l’app : <https://gitlab.com/tikiwiki/tiki/>
+* YunoHost Store: <https://apps.yunohost.org/app/tiki>
 * Signaler un bug : <https://github.com/YunoHost-Apps/tiki_ynh/issues>
 
 ## Informations pour les développeurs

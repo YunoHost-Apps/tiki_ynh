@@ -45,6 +45,7 @@ Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with t
 * Official app website: <https://tiki.org/>
 * Official admin documentation: <https://doc.tiki.org>
 * Upstream app code repository: <https://gitlab.com/tikiwiki/tiki/>
+* YunoHost Store: <https://apps.yunohost.org/app/tiki>
 * Report a bug: <https://github.com/YunoHost-Apps/tiki_ynh/issues>
 
 ## Developer info
