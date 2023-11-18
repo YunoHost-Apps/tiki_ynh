@@ -5,7 +5,7 @@ name = "Tiki"
 description.en = "Wiki-based, content management system"
 description.fr = "Système de gestion de contenu basé sur Wiki"
 
-version = "26.1~ynh1"
+version = "26.2~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -20,8 +20,11 @@ code = "https://gitlab.com/tikiwiki/tiki/"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "300M"
 ram.runtime = "50M"
@@ -52,13 +55,13 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_26.x_Alnilam/26.1/tiki-26.1.tar.gz/download"
-        sha256 = "f6d0042567feb62bfaf012cb999625ef840501141249a247b3075094030649c7"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_26.x_Alnilam/26.2/tiki-26.2.tar.gz/download"
+        sha256 = "d85d513313e2377ecc2fe03f471b053727cb7f9a40143192f95191891557dabf"
         format = "tar.gz"
 
         [resources.sources.lts]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.5/tiki-24.5.tar.gz/download"
-        sha256 = "d91cb7846a0c863ab5b1d29a305acd865365364e05f5d83c00e11cae4d67a71b"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.6/tiki-24.6.tar.gz/download"
+        sha256 = "1dc1a3f0236c79287b14bfe45eb789e8b0e5c89d2a9089bab496c61a2c73a9f0"
         format = "tar.gz"
 
     [resources.system_user]
