@@ -59,7 +59,7 @@ then
         source_id_to_use="lts"
     fi
 
-    ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use"
+    ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use" --full_replace=1
 fi
 
 chmod -R o-rwx "$install_dir"
