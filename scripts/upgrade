@@ -11,10 +11,9 @@ ynh_app_setting_set_default --key=php_upload_max_filesize --value=256M
 ynh_script_progression "Ensuring downward compatibility..."
 
 # If release_cycle doesn't exist, create it
-# FIXME: maybe replace with: ynh_app_setting_set_default --key=release_cycle --value=longterm
 if [ -z "${release_cycle:-}" ]; then
     release_cycle=longterm
-    ynh_app_setting_set --key=release_cycle --value=$release_cycle
+    ynh_app_setting_set_default --key=release_cycle --value=$release_cycle
 fi
 
 #=================================================
