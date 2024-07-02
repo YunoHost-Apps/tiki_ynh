@@ -5,7 +5,7 @@ name = "Tiki"
 description.en = "Wiki-based, content management system"
 description.fr = "Système de gestion de contenu basé sur Wiki"
 
-version = "26.2~ynh1"
+version = "27.0~ynh1"
 
 maintainers = []
 
@@ -57,13 +57,13 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_26.x_Alnilam/26.2/tiki-26.2.tar.gz/download"
-        sha256 = "d85d513313e2377ecc2fe03f471b053727cb7f9a40143192f95191891557dabf"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_27.x_Miaplacidus/27.0/tiki-27.0.tar.gz/download"
+        sha256 = "bcc79422239e9b17846082bec4341326518e95a5c058307e61933c2382245dbb"
         format = "tar.gz"
 
         [resources.sources.lts]
-        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_24.x_Wolf_359/24.6/tiki-24.6.tar.gz/download"
-        sha256 = "1dc1a3f0236c79287b14bfe45eb789e8b0e5c89d2a9089bab496c61a2c73a9f0"
+        url = "https://sourceforge.net/projects/tikiwiki/files/Tiki_27.x_Miaplacidus/27.0/tiki-27.0.tar.gz/download"
+        sha256 = "bcc79422239e9b17846082bec4341326518e95a5c058307e61933c2382245dbb"
         format = "tar.gz"
 
     [resources.system_user]
@@ -76,15 +76,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "tesseract-ocr, imagemagick, mariadb-server"
-
-    packages_from_raw_bash = """
-            if [[ "$release_cycle" == "regular" ]]; then 
-                echo "php8.1-bz2, php8.1-curl, php8.1-gd, php8.1-zip, php8.1-mysql, php8.1-xml, php8.1-mbstring, php8.1-intl"
-            else
-                echo "php7.4-bz2, php7.4-curl, php7.4-gd, php7.4-zip, php7.4-mysql, php7.4-xml, php7.4-mbstring, php7.4-intl"
-            fi
-        """
+    packages = "tesseract-ocr, imagemagick, mariadb-server, php8.2-bz2, php8.2-curl, php8.2-gd, php8.2-zip, php8.2-mysql, php8.2-xml, php8.2-mbstring, php8.2-intl"
 
     [resources.database]
     type = "mysql"
