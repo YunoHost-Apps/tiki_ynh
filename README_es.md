@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Tiki para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/tiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiki/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
 
 [![Instalar Tiki con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiki)
 
