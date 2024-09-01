@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Tiki pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/tiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiki/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
 
 [![Installer Tiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiki)
 
@@ -19,6 +19,7 @@ Il NE doit PAS être modifié à la main.
 Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre de fonctionnalités intégrées.
 
 ### Cas d'utilisation
+
 - Publication Web
 - Collaboration
 - Gestion de projet

@@ -1,30 +1,14 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
-fpm_footprint="low"
-fpm_free_footprint=0
-fpm_usage="low"
-
-#=================================================
-# STORE SETTINGS FROM MANIFEST
-#=================================================
-
-ynh_app_setting_set --app=$app --key=fpm_footprint --value=$fpm_footprint
-ynh_app_setting_set --app=$app --key=fpm_free_footprint --value=$fpm_free_footprint
-ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
+ynh_app_setting_set --key=php_upload_max_filesize --value=256M
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=15
+ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from app.src
 source_id_to_use="main"
@@ -35,54 +19,49 @@ fi
 
 ynh_setup_source --dest_dir="$install_dir" --source_id="$source_id_to_use"
 
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-
 #=================================================
-# NGINX CONFIGURATION
+# SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring NGINX web server..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
-# Create a dedicated PHP-FPM config
-ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
+ynh_config_add_phpfpm
 
 #=================================================
 # ADD INITIAL CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring $app..." --weight=3
+ynh_script_progression "Configuring $app..."
 
 # Define a function to execute commands with proper permissions
 exec_as_app() {
-  (cd "$install_dir" && ynh_exec_as "$app" \
-      php${phpversion} --define apc.enable_cli=1 "$@")
+  (cd "$install_dir" && ynh_exec_as_app \
+      php${php_version} --define apc.enable_cli=1 "$@")
 }
 
 # Create database configuration file
-ynh_exec_warn_less exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
+ynh_hide_warnings exec_as_app console.php database:configure "$app" "$db_pwd" "$app"
 
 # Create database contents
-ynh_exec_warn_less exec_as_app console.php database:install
+ynh_hide_warnings exec_as_app console.php database:install
 
 # Set default database directory
 cd "$install_dir"
 sed -i -e "s#storage/fgal#$data_dir#" lib/prefs/fgal.php
 # Lock installer
-ynh_exec_warn_less exec_as_app console.php installer:lock
+ynh_hide_warnings exec_as_app console.php installer:lock
 
 # Create data index
-ynh_exec_warn_less exec_as_app console.php index:rebuild
+ynh_hide_warnings exec_as_app console.php index:rebuild
 
 # Set on Long Term Support versions
 if [[ "$release_cycle" == "longterm" ]]
 then
-  ynh_exec_warn_less exec_as_app console.php preferences:set tiki_release_cycle longterm
+  ynh_hide_warnings exec_as_app console.php preferences:set tiki_release_cycle longterm
 fi
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"

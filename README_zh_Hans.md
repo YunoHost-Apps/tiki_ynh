@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Tiki
 
-[![集成程度](https://dash.yunohost.org/integration/tiki.svg)](https://dash.yunohost.org/appci/app/tiki) ![工作状态](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/tiki.svg)](https://ci-apps.yunohost.org/ci/apps/tiki/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/tiki.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/tiki.maintain.svg)
 
 [![使用 YunoHost 安装 Tiki](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiki)
 
@@ -19,6 +19,7 @@
 Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with the most built-in features.
 
 ### Use cases
+
 - Web Publishing
 - Collaboration
 - Project Management
