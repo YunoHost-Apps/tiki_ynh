@@ -5,7 +5,7 @@ name = "Tiki"
 description.en = "Wiki-based, content management system"
 description.fr = "Système de gestion de contenu basé sur Wiki"
 
-version = "26.2~ynh1"
+version = "26.2~ynh2"
 
 maintainers = []
 
@@ -17,7 +17,8 @@ admindoc = "https://doc.tiki.org"
 code = "https://gitlab.com/tikiwiki/tiki/"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.29"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
@@ -69,6 +70,7 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.data_dir]
 

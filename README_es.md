@@ -19,6 +19,7 @@ No se debe editar a mano.
 Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with the most built-in features.
 
 ### Use cases
+
 - Web Publishing
 - Collaboration
 - Project Management
@@ -32,7 +33,7 @@ Tiki Wiki CMS Groupware is the Free / Libre / Open Source Web Application with t
 - Tiki Trackers is the built-in database web apps builder and low-code / no-code application framework.
 
 
-**Versión actual:** 26.2~ynh1
+**Versión actual:** 26.2~ynh2
 
 **Demo:** <https://tiki.org/Try-Tiki>
 
