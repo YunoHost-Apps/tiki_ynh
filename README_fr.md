@@ -34,7 +34,7 @@ Tiki Wiki CMS Groupware est l'application Web libre dotée du plus grand nombre 
 Les Tiki Trackers sont la composante intégrée pour le développement low-code / no-code et le générateur de formulaires et bases de données.
 
 
-**Version incluse :** 26.2~ynh2
+**Version incluse :** 27.0~ynh1
 
 **Démo :** <https://tiki.org/Try-Tiki>
 
